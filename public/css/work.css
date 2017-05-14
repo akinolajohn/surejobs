@@ -1,0 +1,7 @@
+/* Components */
+    /* Header Navigation Panel */
+        /* Items */
+        #headerNav > *[data-id="linkB"] {
+            background: #94BD15 !important;
+            color: #FFFFFF !important
+        }
