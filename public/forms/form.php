@@ -52,7 +52,7 @@
                     <input class="collapsed" placeholder="  Month" required style="width: 35%" type="text">
                     <input class="collapsed" placeholder="  Year" required style="width: 33%" type="text">
                     <!-- I Accept -->
-                    <input data-title="Check to agree." required type="checkbox">
+                    <input data-title="Check to agree" required type="checkbox">
                     <span> I Accept the Terms and Conditions. </span>
                     <!-- Register -->
                     <input class="quinsa-btn" type="submit">
