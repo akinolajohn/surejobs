@@ -20,7 +20,8 @@
             margin: 20px 27.5px;
             padding: 0;
             transition: .675s;
-            width: 250px
+            width: 250px;
+            zoom: .9
         }
             /* Caption */
             #categorySection .category h1 {
