@@ -168,11 +168,11 @@
                     </a>
                     
                     <!-- Instagram -->
-                    <a class="bg" data-title="Check out our Instagram page" id="instagram"
+                    <!-- <a class="bg" data-title="Check out our Instagram page" id="instagram"
                         href="https://www.instagram.com/_surejobs/?hl=en"
                         style="background-image: url(assets/img/png/logo/Instagram.png)"
                         target="_blank">
-                    </a>
+                    </a> -->
 
                     <!-- Google+  -->
                     <a class="bg" data-inactive data-title="Check out our Google+ page" id="googlePlus"
