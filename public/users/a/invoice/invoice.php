@@ -42,6 +42,9 @@
                 <input class="form-control primary-input" placeholder=" Date " type="text">
                 <!-- Due Date -->
                 <input class="form-control secondary-input" placeholder=" Due Date " type="text">
+
+                <!-- Message -->
+                <textarea class="form-control message" placeholder="    Message "></textarea>
             </div>
         </article>
     </main>

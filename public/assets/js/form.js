@@ -2,8 +2,6 @@
 var toggle = document.getElementById("toggle"),
     indexer = "Login"
 
-var vAccount = document.getElementById("toggle-vAccount")
-
     toggle.onclick = function() {
         if (indexer == "SignIn") {
             for (i = 0; i < document.getElementsByClassName("form").length; i++) 
@@ -29,13 +27,4 @@ var vAccount = document.getElementById("toggle-vAccount")
 
             indexer = "SignIn"
         }
-    }
-
-    vAccount.onclick = function() {
-        for (i = 0; i < document.getElementsByClassName("form").length; i++) 
-            document.getElementsByClassName("form")[i].style.display = "none"
-
-        document.getElementById("title").innerHTML = " Virtual Account "
-
-        document.getElementById("vAccount").style.display = "block"
     }

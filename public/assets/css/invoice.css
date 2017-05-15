@@ -4,40 +4,82 @@
         margin: 50px 5%
     }
 
-    /* Invoice */
+    /* Invoice Section */
     #invoice {
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
         margin: 0 auto;
+        padding: 20px 5%;
         width: 75%
     }
-        /* Content */
-        .invoice > * {
-            background-color: #FFFFFF;
-            background-image: none;
-            border: 1px solid #CCCCCC;
-            border-radius: 4px;
-            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-            color: #565656;
-            display: inline-block;
-            font-size: 14px;
-            height: 34px;
-            line-height: 1.42857143;
-            padding: 6px 12px;
-            transition: border-color, box-shadow .15s ease-in-out;
-            width: 100%
+        /* Invoice */
+        .invoice {
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+            padding: 20px;
+            zoom: .95
         }
-            /* Non-Editable Content */
-            .invoice > fieldset[disabled] *,
-            .invoice > *[readonly] {
-                background-color: #EEEEEE;
-                opacity: 1
+            /* Content */
+            .invoice > * {
+                background-color: #FFFFFF;
+                background-image: none;
+                border: 1px solid #689F38;
+                border-radius: 4px;
+                box-shadow: 0 0 0 0 transparent, inset 0 1px 1px rgba(104, 159, 56, .075);
+                color: #565656;
+                display: inline-block;
+                filter: grayscale(.25);
+                font-size: 14px;
+                height: 34px;
+                line-height: 1.42857143;
+                padding: 6px 12px;
+                transition: .15s ease-in-out;
+                transition-property: border-color, box-shadow;
+                width: 100%
             }
-        /* Primary Content */
-        .header,
-        .primary-input {
-            width: 75%
-        }
-        /* Secondary Content */
-        .secondary-input {
-            
-        }
+            .invoice > *:focus {
+                border-color: #689F38;
+                box-shadow: 0 0 7.5px rgba(104, 159, 56, 1), inset 0 0 0 transparent
+            }
+                /* Non-Editable Content */
+                .invoice > fieldset[disabled] *,
+                .invoice > *[readonly] {
+                    background-color: #EEEEEE;
+                    opacity: 1
+                }
+            /* Primary & Secondary Content(s) */
+            .header,
+            .primary-input,
+            .secondary-input {
+                margin: 10px 2.4%
+            }
+            /* Primary Content */
+            .header,
+            .primary-input {
+                width: 69.9%
+            }
+            /* Secondary Content */
+            .secondary-input {
+                width: 19.9%
+            }
+            /* Client Name */
+            [data-id*="clientName"] {
+                border: 0;
+                border-bottom: 1px solid #000000;
+                border-radius: 0;
+                box-shadow: none;
+                color: #000000;
+                font-size: larger;
+                font-weight: bolder;
+                text-indent: 5%;
+                text-transform: uppercase;
+                width: 90%
+            }
+            /* Message */
+            .message {
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+                max-height: 300px;
+                max-width: 90%;
+                resize: vertical;
+                width: 90%
+            }

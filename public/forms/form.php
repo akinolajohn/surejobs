@@ -33,27 +33,29 @@
             <!-- Sign In -->
             <section class="form" id="signIn">
                 <form>
-                    <!-- Name
-                                --- NOTE ---
-                                    Collapsed fields use inline width-styling.
-                                    Required fields are translucent.
-                    -->
+                    <!-- Name -->
                     <input class="collapsed" data-title="Type in your name" placeholder="  First Name" required style="width: 35%" type="text">
                     <input class="collapsed" data-title="Type in your other name" placeholder="  Middle Name" style="width: 33%" type="text">
                     <input class="collapsed" data-title="Type in your surname" placeholder="  Last Name" required style="width: 30%" type="text">
+
                     <!-- Electronic Mail -->
                     <input data-title="Type in your email address." placeholder="  E-Mail" required type="email">
+                    
                     <!-- Password -->
                     <input data-title="Type in your password" placeholder="  Password" required type="password">
+                    
                     <!-- Confirm Password -->
                     <input data-title="Secure your password" placeholder="  Confirm Password" required type="password">
+                    
                     <!-- Day Month Year -->
                     <input class="collapsed" placeholder="  Day" required style="width: 30%" type="text">
                     <input class="collapsed" placeholder="  Month" required style="width: 35%" type="text">
                     <input class="collapsed" placeholder="  Year" required style="width: 33%" type="text">
+                    
                     <!-- I Accept -->
                     <input data-title="Check to agree" required type="checkbox">
                     <span> I Accept the Terms and Conditions. </span>
+                    
                     <!-- Register -->
                     <input class="quinsa-btn" type="submit">
                 </form>
@@ -64,26 +66,17 @@
                 <form>
                     <!-- Electronic Mail -->
                     <input placeholder="  E-Mail" required type="email">
+                    
                     <!-- Password -->
                     <input placeholder="  Password" required type="password">
-                    <!-- Register -->
-                    <input class="quinsa-btn" type="submit">
-                </form>
-            </section>
-
-            <!-- Virtual Account -->
-            <section class="form" id="vAccount">
-                <form>
+                    
                     <!-- Register -->
                     <input class="quinsa-btn" type="submit">
                 </form>
             </section>
 
             <!-- Toggle -->
-                <!-- Sign In or Login -->
-                <span> <a id="toggle"> Already have an account? Login here.</a> </span>
-                <!-- Virtual Account -->
-                <span style="float: right"> <a id="toggle-vAccount"> Need a virtual account? Register here </a>. </span>
+            <span style="float: right"> <a id="toggle"> Already have an account? Login here.</a> </span>
     </main>
 
     <!-- Tether IO Script (Dependency Script) -->
