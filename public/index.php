@@ -190,11 +190,14 @@
                 </div>
             </nav>
 
-            <div class="row">
-                <p> &copy; Sure Jobs 2017. </p>
+            <div class="row" id="copyrightUpdate">
+                <p> &copy; Sure Jobs, <year> 2017 </year>. </p>
 
                 <!-- Get the current year. -->
                 <script id="currentYear" type="text/javascript">
+                    setTimeout(function() {
+                        document.getElementsByTagName("year")[0].innerHTML = new Date().getFullYear()
+                    }, 1000)
                 </script>
             </div>
         </section>
