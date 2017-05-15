@@ -154,11 +154,11 @@
 
                 <div class="footer-content" id="logos">
                     <!-- Facebook -->
-                    <a class="bg" data-title="Check out our Facebook page" id="facebook"
+                    <!-- <a class="bg" data-title="Check out our Facebook page" id="facebook"
                         href="https://www.facebook.com/Surejobs-437849623238544/"
                         style="background-image: url(assets/img/png/logo/Facebook.png)"
                         target="_blank">
-                    </a>
+                    </a> -->
                     
                     <!-- Twitter -->
                     <a class="bg" data-inactive data-title="Check out our Twitter page" id="twitter"
