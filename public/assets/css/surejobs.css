@@ -1,37 +1,27 @@
-/* Colors */
-    /* Main Background Colors:
-            #B5E61D or rgb(181, 230, 29),
-            #3F500A or rgb(63, 80, 10)
-    */
-
-    /* Main Border Colors:
-            #B5E61D or rgb(181, 230, 29)
-    */
-
-    /* Main Foreground Colors:
-            #B5E61D or rgb(181, 230, 29),
-            #94BD15 or rgb(148, 189, 21),
-            #86AC13 or rgb(134, 172, 19),
-            #3F500A or rgb(63, 80, 10)
-    */
+/* Colors
+        #388E3C or rgb(56, 142, 60) or hsl(123, 154, 142) or cmyk(61, 0, 58, 44),
+        #689F38 or rgb(104, 159, 56) or hsl(92, 165, 159) or cmyk(35, 0, 65, 38),
+        #AFB42B or rgb(175, 180, 43) or hsl(62, 194, 180) or cmyk(3, 0, 76, 29)
+*/
 
 /* HTML Elements */
     /* * */
     * {
-        font-family: SureJobsFontRounded;
+        font-family: Raleway, sans-serif;
         letter-spacing: 1.3px;
         transition: .675s
     }
     /* <a> */
     a {
-        color: #94BD15;
+        color: #388E3C;
         cursor: pointer;
         text-decoration: none !important;
-        text-shadow: 0 0 1px rgba(0, 0, 0, .1)
+        text-shadow: 0 0 1px rgba(56, 142, 60, .5)
     }
     a:focus,
     a:hover {
-        color: #86AC13
+        color: #AFB42B;
+        text-shadow: 0 0 1px rgba(175, 180, 43, .5)
     }
     /* <body> */
     body {
@@ -57,7 +47,7 @@
     }
     /* <dfn> */
     dfn {
-        font-size: larger;
+        font-size: larger
     }
 
 /* Components */
@@ -82,7 +72,7 @@
     /* Buttons */
         /* Default */
         .quinsa-btn {
-            background: #94BD15 !important;
+            background: #689F38 !important;
             border: 0;
             border-radius: 4px;
             box-shadow: 0 0 5px 0 rgba(127, 127, 127, .75);
@@ -93,12 +83,12 @@
         }
         input:focus,
         .quinsa-btn:focus {
-            outline: 1px double rgba(63, 80, 10, .5);
+            outline: 1px double rgba(104, 159, 56, .5);
             outline-offset: 3px
         }
         .quinsa-btn:hover {
             background: #FFFFFF !important;
-            color: #94BD15 !important
+            color: #689F38 !important
         }
         /* 2nd Theme */
         .quinsa-btn-theme:hover {
@@ -108,10 +98,10 @@
         /* Inverted */
         .quinsa-btn-inverse {
             background: #FFFFFF !important;
-            color: #94BD15 !important
+            color: #689F38 !important
         }
         .quinsa-btn-inverse:hover {
-            background: #94BD15 !important;
+            background: #689F38 !important;
             color: #FFFFFF !important
         }
     /* Fields */
@@ -127,31 +117,40 @@
     }
         /* Footer Content */
         #footerCopy .footer-content {
+            display: flex;
             flex-grow: 1;
-            margin: 10px auto
+            margin: 10px auto;
+            justify-content: center
         }
             /* Footer Content Components */
                 /* Links */
-                #footerCopy #links {
-                    align-items: center;
-                    display: flex;
-                    justify-content: center
-                }
-                #footerCopy #links > * {
-                    display: inline-block;
-                    padding: 10px auto;
-                    width: 20%
-                }
+                    /* Container */
+                    #footerCopy #links {
+                        align-items: center;
+                        display: flex;
+                        justify-content: center
+                    }
+                    /* Links */
+                    #footerCopy #links > * {
+                        flex-grow: 1;
+                        margin: 0 5px;
+                        padding: 10px auto;
+                        width: 20%
+                    }
                 /* Logos */
-                #footerCopy #logos > * {
-                    border: 1px solid rgba(0, 0, 0, .1);
-                    cursor: pointer;
-                    display: inline-block;
-                    height: 50px;
-                    margin: 5px 35px;
-                    padding: 5px;
-                    width: 50px
-                }
+                    /* Logos */
+                    #footerCopy #logos > * {
+                        border: 1px solid rgba(0, 0, 0, .1);
+                        cursor: pointer;
+                        display: inline-block;
+                        height: 50px;
+                        margin: 5px 35px;
+                        padding: 5px;
+                        width: 50px
+                    }
+                    #footerCopy #logos > [data-inactive] {
+                        display: none !important
+                    }
     /* Forms */
     .form {
         display: inline-block;
@@ -170,9 +169,7 @@
         width: 100%;
         z-index: 2
     }
-        /* --- UPDATE REQUIRED ---
-                The navigation dropdown must be decided upon.
-        */
+        /* Header Navigation Panel Dropdown */
         #headerNavExtraDropdown {
             display: flex;
             margin: 0;
@@ -181,7 +178,7 @@
         }
         #headerNavExtraDropdown > * {
             background: #FFFFFF;
-            border-bottom: 2px solid #94BD15;
+            border-bottom: 2px solid #689F38;
             box-shadow: 0 0 2.5px 0 rgba(0, 0, 0, .3);
             flex-grow: 1;
             display: inline-block;
@@ -210,9 +207,6 @@
             display: none;
             left: 57.5%
         }
-        #headerNavExtraDropdown > *[data-ref="linkE"] {
-            left: 70%
-        }
         /* Main Item */
         #headerNav .main {
             background: #FFFFFF !important;
@@ -229,7 +223,7 @@
             }
         /* Items */
         #headerNav > * {
-            color: #94BD15;
+            color: #689F38;
             cursor: pointer;
             display: inline-block;
             font-size: 16.67px;
@@ -242,57 +236,35 @@
             width: 12.5%
         }
         #headerNav > *:focus {
-            outline: 1px solid #94BD15
+            outline: 1px solid #689F38
         }
         #headerNav > *:hover {
-            background: #94BD15;
+            background: #689F38;
             color: #FFFFFF
-        }
-        /* User Navigation Item */
-        #headerNav > *[data-id="linkE"] {
-            display: none
         }
 
 /* Dependency CSS
         --- NOTE ---
-            Pieces of code freely given to use.
+            Minified sections of plug-in code.
 */
-    /* Text Type CSS */
-    [data-kbd] {
-        /* --- NOTE ---
-                Stimulate text cursor effect.
-        */
-        animation: txtCursor .3s linear 0s infinite alternate-reverse forwards running;
-        border: 0;
-        border-left: 2px solid;
-        display: inline;
-        padding-right: 0;
-        z-index: 3
-    }
-    [data-kbd*="rev"] {
-        border-left: 0;
-        border-right: 2px solid
-    }
-        @keyframes txtCursor {
-            0% {
-                border-color: transparent
-            }
+    /* Lapys JS */
+    [data-kbd] { animation: txtCursor .3s linear 0s infinite alternate-reverse forwards running; border: 0; border-left: 2px solid; display: inline; padding-right: 0; z-index: 3 } [data-kbd*="rev"] { border-left: 0; border-right: 2px solid } @keyframes txtCursor { 0% { border-color: transparent } }
+        /* Tooltip CSS */
+        #tooltip {
+            animation: fadeIn .5s;
+            background: #FFFFFF;
+            border: 1px solid;
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+            color: #388E3C;
+            display: inline;
+            font-size: 11px;
+            font-weight: bold !important;
+            left: 0;
+            opacity: 0;
+            padding: 2.5px;
+            pointer-events: none;
+            position: fixed;
+            transition: opacity 1s;
+            top: 0;
+            z-index: 2147483647 !important
         }
-    /* Tooltip CSS */
-    #tooltip {
-        background: #FFFFFF;
-        border: 1px solid;
-        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
-        color: #94BD15;
-        display: inline;
-        font-size: 10px;
-        font-weight: bold !important;
-        left: 0;
-        opacity: 0;
-        padding: 2.5px;
-        pointer-events: none;
-        position: fixed;
-        transition: opacity 1s;
-        top: 0;
-        z-index: 2147483647 !important
-    }

@@ -73,14 +73,14 @@
                     z-index: 1
                 }
                     /* Buttons */
-                    #headerCarousel .carousel-caption .buttons > * {
+                    #headerCarousel .carousel-caption #buttons > * {
                         display: inline-block;
                         font-size: 24px;
                         margin: 20px;
-                        width: 120px
+                        width: 150px
                     }
-                    /* Titles */
-                    #headerCarousel .carousel-caption .title {
+                    /* Title */
+                    #headerCarousel .carousel-caption #header {
                         color: #FFF;
                         font-size: 72px
                     }

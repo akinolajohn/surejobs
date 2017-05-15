@@ -1,0 +1,157 @@
+/* HTML Elements */
+    /* <main> */
+    main { 
+        font-weight: normal
+    }
+
+/* Components */
+    /* Header Navigation Panel */
+        /* Items */
+        #headerNav > [data-id="linkD"] {
+            background: #FFFFFF !important;
+            color: #388E3C !important;
+            flex-grow: 1
+        }
+        /* Dropdown Items */
+        #headerNavExtraDropdown > [data-ref="linkD"] {
+            display: inline-block !important;
+            left: 70% !important
+        }
+
+    /* User Section */
+    #user {
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+        margin: 0 auto;
+        width: 75%
+    }
+        /* Section */
+        .section {
+            display: block;
+            width: 100%;
+        }
+        /* Profile Section */
+        #profileSection {
+            background: #689F38;
+            color: #FFFFFF
+        }
+            /* User Profile */
+            #userProfile {
+                padding-top: 50px
+            }
+                /* --- NOTE ---
+                        The content is centered via guessed margin.
+                */
+                /* User Portrait */
+                #userPortrait {
+                    background: #B5E61D;
+                    margin: 30px 39%
+                }
+                /* User Name */
+                #userName {
+                    font-size: 30px;
+                    margin: auto;
+                    text-align: center
+                }
+                /* User Status */
+                #userStatusContainer {
+                    margin: 20px 30%;
+                    width: 100%
+                }
+                    /* Content */
+                    #userStatusContainer > * {
+                        pointer-events: none
+                    }
+                    /* Label */
+                    #userStatusLabel {
+                        font-weight: bold
+                    }
+            /* User Details */
+            #userDetails {
+                background: rgba(0, 0, 0, .1);
+                padding: 0
+            }
+                /* Details Pane */
+                #userDetails .detail-pane {
+                    padding: 5px 25px
+                }
+                #userDetails .detail-pane:hover {
+                    background: rgba(0, 0, 0, .1);
+                    padding-left: 30px
+                }
+                    /* Header */
+                    #userDetails .detail-pane .detail-pane-title {
+                        cursor: default;
+                        text-indent: 5%
+                    }
+                    /* Value */
+                    #userDetails .detail-pane .detail-pane-value {
+                        font-size: 105%;
+                        font-weight: bold;
+                        margin: 2.5px auto;
+                        text-align: center
+                    }
+        /* (User Wall) Board Section */
+        #boardSection {
+            background: #FFFFFF;
+            color: #000000;
+            padding-bottom: 50px;
+            padding-top: 50px
+        }
+            /* Pending Jobs */
+                /* Job Boards */
+                    /* Job Board */
+                    #jobBoards .job-board {
+                        background: #FCFCFC;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+                        font-size: larger;
+                        margin-left: 5%;
+                        max-width: 80%;
+                        padding: 7.5px;
+                        transition: .675s
+                    }
+                    #jobBoards .job-board:hover {
+                        background: #FFFFFF
+                    }
+            /* Invoices */
+                /* Invoice Boards */
+                    /* Invoice Board */
+                    #invoiceBoards .invoice-board {
+                        background: #FCFCFC;
+                        box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+                        font-size: larger;
+                        margin-left: 5%;
+                        max-width: 80%;
+                        padding: 7.5px;
+                        transition: .675s
+                    }
+                    #invoiceBoards .invoice-board:hover {
+                        background: #FFFFFF
+                    }
+                        /* Header */
+                        #invoiceBoards .invoice-board .invoice-board-title {
+                            text-indent: 5%
+                        }
+                        /* Details */
+                        #invoiceBoards .invoice-board .invoice-board-details {
+                            padding-left: 10%
+                        }
+                            /* Amount Required */
+                            #invoiceBoards .invoice-board .invoice-board-details [data-inner-amount]::before {
+                                content: "Total : "
+                            }
+                            /* Due Date */
+                            #invoiceBoards .invoice-board .invoice-board-details [data-inner-date]::before {
+                                content: "Date : "
+                            }
+
+    /* Bootstrap CSS */
+        /* Containers */
+        .container {
+            padding-left: 0;
+            padding-right: 0
+        }
+        /* Rows */
+        .row {
+            margin-left: 0;
+            margin-right: 0
+        }

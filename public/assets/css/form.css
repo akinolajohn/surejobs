@@ -8,7 +8,7 @@
     }
     /* <main> */
     main {
-        background: #94BD15;
+        background: #388E3C;
         padding: 15px 100px
     }
 
@@ -16,7 +16,7 @@
     /* Header Navigation Panel */
         /* Items */
         #headerNav > *[data-id="linkD"] {
-            background: #94BD15 !important;
+            background: #388E3C !important;
             color: #FFFFFF !important
         }
     /* Form Title */
@@ -50,7 +50,7 @@
                 .form input:not([type="checkbox"]) {
                     background: transparent;
                     border: 0;
-                    border-bottom: 2px solid #3F500A;
+                    border-bottom: 2px solid #388E3C;
                     display: block;
                     font-weight: bold;
                     margin: 7px auto;
@@ -59,7 +59,7 @@
                     width: 100%
                 }
                 .form input:not([type="checkbox"]):not([type="submit"]):focus {
-                    border-bottom-color: #B5E61D
+                    border-bottom-color: #AFB42B
                 }
                     /* Placeholder */
                     .form input:-moz-placeholder {
@@ -92,7 +92,7 @@
                 }
                 /* Checkboxes */
                 .form input[type="checkbox"] {
-                    background: #3F500A;
+                    background: #388E3C;
                     border: 1px solid #FFFFFF;
                     cursor: pointer;
                     outline: 0 !important;
@@ -102,7 +102,7 @@
                 }
                 .form input[type="checkbox"]:checked {
                     background: #FFFFFF;
-                    border-color: #3F500A
+                    border-color: #388E3C
                 }
                 /* Submit Buttons */
                 .form input[type="submit"] {
