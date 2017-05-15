@@ -192,6 +192,10 @@
 
             <div class="row">
                 <p> &copy; Sure Jobs 2017. </p>
+
+                <!-- Get the current year. -->
+                <script id="currentYear" type="text/javascript">
+                </script>
             </div>
         </section>
     </footer>
