@@ -25,8 +25,8 @@
     <main>
         <!-- Forms -->
             <!-- Title
-                        --- NOTE ---
-                            Dynamically set via Javascript.
+                    --- NOTE ---
+                        Dynamically set via Javascript.
             -->
             <h1 id="title"> Sign In </h1>
 

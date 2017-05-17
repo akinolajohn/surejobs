@@ -29,6 +29,23 @@
 </head>
 
 <body>
+    <!-- Header Navigation Panel (Navigation) -->
+    <nav id="headerNav">
+         <!-- Link Main -->
+        <a class="main" data-id="linkMain" data-title=" Home " href="../index.php">
+            <img draggable="false" id="logo" src="assets/img/png/logo/Sure Jobs (Medium).png">
+        </a>
+        <!-- Links A - E -->
+            <!-- Hire Artisans -->
+            <a data-id="linkA" href="pages/hire.php"> Hire Artisans </a>
+            <!-- Find Work -->
+            <a data-id="linkB" href="pages/work.php"> Find Work </a>
+            <!-- How it Works -->
+            <a data-id="linkC" href="pages/about-us.php"> How it Works </a>
+            <!-- Sign In or Join -->
+            <a data-id="linkD" href="forms/form.php"> Sign In or Join </a>
+    </nav>
+
     <main>
         <header id="header">
             <!-- Jumbotron Carousel -->
