@@ -38,6 +38,16 @@
                 <!-- Amount -->
                 <input class="form-control secondary-input" placeholder=" Amount (₦) " type="text">
 
+                <!-- Add -->
+                    <!-- Item -->
+                    <button class="btn btn-circle btn-default btn-item-add btn-success" type="button">
+                        <span class="glyphicon glyphicon-plus"> </span>
+                    </button>
+                    <!-- Amount -->
+                    <button class="btn btn-circle btn-default btn-amount-add btn-success" type="button">
+                        <span class="glyphicon glyphicon-plus"> </span>
+                    </button>
+
                 <!-- Date -->
                 <input class="form-control primary-input" placeholder=" Date " type="text">
                 <!-- Due Date -->

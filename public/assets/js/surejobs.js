@@ -186,7 +186,7 @@ setTimeout(function() {
                     // Link Main
                         // href
                         $("#headerNav .main")[0].setAttribute(
-                            "href", "../" + $("#headerNav .main")[0].getAttribute("href")
+                            "href", $("#headerNav .main")[0].getAttribute("href")
                         )
                         // src
                         $("#headerNav .main #logo")[0].setAttribute(
